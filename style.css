@@ -1,0 +1,160 @@
+*{ box-sizing: border-box; }
+
+html, body {
+    background-color: #000;
+    color: blanchedalmond;
+    height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-gap: 1em;
+    height: 100%;
+    padding: 2em;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    line-height: 3em;
+}
+
+.new-game {
+    text-transform: uppercase;
+    padding: .5em;
+    border-radius: 2px;
+    font-size: .75rem;
+    cursor: pointer;
+    border: none;
+}
+
+.scores {
+    font-size: .75rem;
+    margin: 2.25em 0;
+    line-height: 2em;
+    width: 250px;
+}
+
+.game-over {
+    height: 5vh;
+    letter-spacing: .75em;
+}
+
+h1, p {
+    margin: 0;
+}
+
+h1 {
+    color: rgb(252, 221, 46);
+    font-size: 2rem;
+}
+
+.gameboard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 420px;
+    width: 420px;
+}
+
+.gameboard div {
+    width: 15px;
+    height: 15px;
+}
+
+.dot {
+    background-color: wheat;
+    border: 6px solid rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.pacman {
+    background: url(pacman.png);
+    background-repeat: no-repeat;
+}
+
+.north {
+    transform: rotate(90deg);
+}
+
+.south {
+    transform: rotate(-90deg);
+}
+
+.east {
+    transform: rotateY(180deg);
+}
+
+.west {
+    transform: rotateY(0);
+}
+
+.wall {
+    background-color: rgb(33, 0, 182);
+}
+
+.powerpellet {
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    background: rgb(47, 228, 47);
+}
+
+.pinky, .inky, .blinky, .clyde {
+    border-radius: 0;
+    border: none;
+    transform: none;
+    background-repeat: no-repeat!important;
+}
+
+.pinky {
+    background: url(pinky.png);
+}
+
+.inky {
+    background: url(inky.png);
+}
+
+.blinky {
+    background: url(blinky.png);
+}
+
+.clyde {
+    background: url(clyde.png);
+}
+
+.scared {
+    background: url(scared.png);
+}
+
+.mobile {
+    display: none;
+    background: url(bluescreen.png);
+    height: 100vh;
+}
+
+.mobile-text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .5em;
+    font-size: 2rem;
+    line-height: 2;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@media all and (max-width: 1000px) {
+    .container {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+    }
+}

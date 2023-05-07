@@ -1,6 +1,6 @@
 # pacman-game
 
-https://anchimek.github.io/pacman-game/
+https://js-game-pacman.netlify.app/
 
 Use ⬅️ ⬆️ ➡️ ⬇️ to play
 
